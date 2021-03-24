@@ -7,9 +7,14 @@ mkdir tmp
 apt update -y
 apt upgrade -y
 apt install tilix git zsh curl gnome-tweaks gnome-shell-extensions chrome-gnome-shell nginx flatpak snapd pulseaudio -y
-wget --directory-prefix=/tmp https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-apt install ./tmp/google-chrome-stable_current_amd64.deb
-snap install --classic code slack google-cloud-sdk flutter
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+apt install google-chrome-stable_current_amd64.deb
+
+snap install --classic code 
+snap install --classic slack 
+snap install --classic google-cloud-sdk
+snap install --classic flutter
 snap install snap-store spotify teams postman obs-studio vlc
 
 apt-get install \
